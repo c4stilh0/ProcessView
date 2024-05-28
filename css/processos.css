@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+section#processos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.589);
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.281);
+    transition: width 0.25s, height 0.25s;
+    transition-timing-function: ease;
+}
+h1 {
+    padding: 10px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+input[type="search"] {
+    border-radius: 30px;
+    width: 500px;
+    height: 50px;
+    border: 0px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+input[type="submit"] {
+    margin: 0px;
+    margin-right: 5px;
+}
+.pesquisa{
+    margin: 20px auto;
+    width: 600px;
+    height: 50px;
+    border: 0px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 5px;
+    background-color: white;
+}
+#parte2 {
+    padding: 10px;
+    width: auto;
+    height: 298px;
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 30px;
+}
+
+@media screen  and  (max-width: 899px) {
+    section#processos{
+        width: 90vw;
+        height: 90vh;
+    }
+    #parte2{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        max-height: 65vh;
+    }
+    .pesquisa {
+        width: 430px;
+    }
+    input[type="search"] {
+        padding-left: 20px;
+        width: 230px;
+    }
+    input[type="submit"] {
+        margin-left: 60px;
+        width: 140px;
+    }
+        
+}   
+
+@media screen  and  (min-width: 899px) {
+    section#processos{
+        width: 950px;
+    }
+}
+@media screen  and  (min-width: 1200px) {
+    section#processos{
+        width: 95vw;
+        height: 90vh;
+    }
+    #parte2{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        max-height: 67vh;
+        
+    }
+}
