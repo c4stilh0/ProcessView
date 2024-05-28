@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div#esquerda > p {
+    font-size: 20px;
+}
+
+div#direita > h1 {
+    margin: 10px;    
+    padding: 30px;
+}
+div#direita > p {
+    font-weight: normal;
+    font-size: medium;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+}
+.iconscontainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 63%;
+    height: 60px;
+    top: 75px;
+    margin: 10px auto;
+}
+#mail {
+    padding: 13px;
+    display: block;
+    float: left;
+}
+input[type="submit" i] {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 899px) {
+    .iconscontainer {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 95%;
+        height: 60px;
+        top: 75px;
+    }
+}

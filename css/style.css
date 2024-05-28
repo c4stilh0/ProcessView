@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: SansSerifBookFLF;
+  src: url(../font/SansSerifBookFLF.otf);
+  font-weight: normal;
+}
+
+/*
+#F2DA5E
+#F2C36B
+#F2B66D
+#A69281
+#592B02
+
+*/
+
+* {
+  font-family: SansSerifBookFLF, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body, html {
+  background-color: #f2c36b;
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.589);
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.281);
+  transition: width 0.25s, height 0.25s;
+  transition-timing-function: ease;
+}
+
+/*Bloco da Esquerda*/
+section#login > div#esquerda {
+  background-color: #ffffff85;
+  padding: 10px;
+}
+div#esquerda > h1 {
+  font-weight: normal;
+  font-size: 32px;
+  padding: 0px;
+  text-align: center;
+  margin-top: 35px;
+}
+div#esquerda > p {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 5px;
+  padding-bottom: 45px;
+  margin-top: 155px;
+  margin-bottom: 0px;
+}
+.cadastre {
+  border: 3px;
+  border-radius: 30px;
+  border: 2px, black;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.247);
+  background-color: #ffffff80;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: block;
+}
+
+/*Bloco da Direita*/
+section#login > div#direita {
+  display: block;
+  padding: 10px;
+}
+div#direita > h1 {
+  font-weight: normal;
+  font-size: xx-large;
+  padding: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.campo {
+  display: block;
+  background-color: #ffffff80;
+  border: 1px white;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  width: 300px;
+  height: 50px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+#person {
+  padding: 13px;
+  display: block;
+  float: left;
+}
+input[type="email"] {
+  width: 180px;
+  height: 50px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 5px;
+  background-color: transparent;
+}
+#lock {
+  padding: 13px;
+  display: block;
+  float: left;
+}
+input[type="password"] {
+  width: 180px;
+  height: 50px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 5px;
+  background-color: transparent;
+}
+#eye {
+  padding: 13px;
+  display: block;
+  float: right;
+  width: 50px;
+  color: rgba(0, 0, 0, 0.5);
+}
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+input[type="submit"] {
+  border: 3px;
+  border-radius: 30px;
+  border: 2px, black;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.247);
+  color: white;
+  background-color: #592b02;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  display: block;
+}
+.checkbox {
+  display: block;
+  float: left;
+  padding: 0px 110px 0px 0px;
+}
+form > a {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 110px;
+}
+.containercheckbox {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconscontainer {
+  display: flex;
+  position: fixed;
+  width: 95%;
+  height: 70px;
+  margin: 10px auto;
+  justify-content: center;
+}
+.containericons {
+  padding: 3px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  height: 60px;
+  padding: 10px;
+}

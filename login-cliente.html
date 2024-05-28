@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cliente</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    
+</head>
+<body>
+    <main>
+        <div class="elipse1"></div>
+        <div class="elipse2"></div>
+        <div class="elipse3"></div>
+        
+        <section id="login">
+            <div id="esquerda">
+                <h1>Process View</h1>
+                <p>Entrar como Advogado</p>
+                <a href="cadastro.html"><button class="cadastre">Cadastre-se</button></a>
+            </div>
+            <div id="direita">
+                <h1>Sou Cliente</h1>
+                <form action="php/login.php" method="post" autocomplete="on">
+                    <div class="campo">                        
+                        <label for="ilogin"><span class="material-symbols-outlined" id="person">person</span></label>
+                        <input type="email" name="email" id="ilogin" autocomplete="email" placeholder="Usuário" required>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined" id="lock">lock</span></label>
+                        <span class="material-symbols-outlined" id="eye">visibility_off</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password"  minlength="8" placeholder="********" required>
+                    </div>
+                    <div class="containercheckbox">
+                        <div class="checkbox">
+                            <input type="checkbox" name="lembre-se" id="lembrar">
+                            <label for="ilembrar">Lembrar</label>
+                        </div>
+                        <a href="">esqueci a senha</a>
+                    </div>
+                    <div class="botao">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div class="iconscontainer">
+                        <div class="containericons"><img class="icons" src="img/icons8-gmail-novo.svg" alt="Gmail" srcset=""></div>
+                        <div class="containericons"><img class="icons" src="img/icons8-facebook.svg" alt="Facebook"></div>
+                        <div class="containericons"><img class="icons" src="img/icons8-instagram.svg" alt="Instagram"></div>
+                        <div class="containericons"><img class="icons" src="img/icons8-twitterx.svg" alt="TwitterX"></div>            
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
