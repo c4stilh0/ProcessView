@@ -94,6 +94,29 @@ div#direita > h1 {
   text-align: center;
   margin-bottom: 30px;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #000 !important; /* Cor do texto */
+  transition: background-color 5000s ease-in-out 0s;
+  letter-spacing: normal;
+}
+input[type="text"] {
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 2px;  
+  background-color: transparent;
+}
 .campo {
   display: block;
   background-color: #ffffff80;
@@ -113,24 +136,27 @@ div#direita > h1 {
   float: left;
 }
 input[type="email"] {
-  width: 180px;
+  width: 200px;
   height: 50px;
   border: 0px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 17px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;  
   background-color: transparent;
+  
 }
+
 #lock {
   padding: 13px;
   display: block;
   float: left;
 }
 input[type="password"] {
-  width: 180px;
+  width: 200px;
   height: 50px;
   border: 0px;
   display: flex;
@@ -138,7 +164,7 @@ input[type="password"] {
   justify-content: center;
   text-align: center;
   font-size: 17px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   background-color: transparent;
 }
 #eye {
@@ -201,3 +227,4 @@ form > a {
   height: 60px;
   padding: 10px;
 }
+
