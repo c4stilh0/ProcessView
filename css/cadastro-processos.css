@@ -62,7 +62,7 @@ h2 {
   width: 300px;
   height: 38px;
   box-shadow: -6px 10px 10px 0px #00000049;
-  background-color: #f3f3f3ad;
+  background-color: #f3f3f3d5;
 }
 
 input[type="text"] {
@@ -155,7 +155,7 @@ label#upload {
     max-height: 80vh;
   }
   .campo {
-    background-color: #f3f3f3ad;
+    background-color: #f3f3f3d5;
   }
   #inumprocessos {
     border: 0px;
