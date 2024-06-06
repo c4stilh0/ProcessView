@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Processos</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/cadastro-processos.css">
+    
+</head>
+<body>
+    <main>
+        <div class="elipse1"></div>
+        <div class="elipse2"></div>
+        <div class="elipse3"></div>
+        
+        <section id="processos">            
+            <h1>Bem Vindo ao Process View, seu Gerenciador de<br> Processos Judiciais</h1>
+            <div id="parte2">
+                <h2>Dados do Processo:</h2>
+                <div id="dados">
+                    <label for="numero-processo">Número do processo:</label>                        
+                    <div class="campo">
+                        <input type="text" name="numero-processo" id="inumprocesso" inputmode="numeric" pattern="[0-9]+" placeholder="xxxxxxx-xx.xxxx.x.xx.xxxx">
+                    </div>
+                    <label for="assunto-processo">Assunto:</label>
+                    <div class="campo">
+                        <input type="text" name="assunto-processo" id="iassunto-processo" placeholder="Assunto do processo">
+                    </div>
+                    <label for="tipo-processo">Tipo:</label>
+                    <div class="campo">
+                        <input type="text" name="tipo-processo" id="itipo" placeholder="Tipo do processo">
+                    </div>
+                    <label for="data">Data do processo:</label>
+                    <div class="campo-data">
+                        <input type="date" name="data" id="idata" placeholder="Data">
+                    </div>
+                </div>
+                <div id="download">
+                    <label for="arquivo" id="upload">Enviar Arquivo</label>
+                    <input type="file" name="arquivo" id="iarquivo">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
