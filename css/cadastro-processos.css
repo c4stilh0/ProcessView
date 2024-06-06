@@ -69,9 +69,7 @@ input[type="text"] {
   width: 260px;
   height: 38px;
 }
-input[type="file" i] {
-  display: none;
-}
+
 .campo-data {
     display: block;
     margin-left: auto;
@@ -89,7 +87,7 @@ input[type="date"] {
   font-size: 18px;
   outline: none;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   box-shadow: -6px 10px 10px 0px #00000096;
   

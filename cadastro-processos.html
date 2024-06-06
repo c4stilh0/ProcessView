@@ -22,28 +22,31 @@
             <h1>Bem Vindo ao Process View, seu Gerenciador de<br> Processos Judiciais</h1>
             <div id="parte2">
                 <h2>Dados do Processo:</h2>
-                <div id="dados">
-                    <label for="numero-processo">Número do processo:</label>                        
-                    <div class="campo">
-                        <input type="text" name="numero-processo" id="inumprocesso" inputmode="numeric" pattern="[0-9]+" placeholder="xxxxxxx-xx.xxxx.x.xx.xxxx">
+                <form action="php/save_file.php" method="post"  enctype="multipart/form-data">
+                    <div id="dados">
+                        <label for="numero-processo">Número do processo:</label>
+                        <div class="campo">
+                            <input type="text" name="numero_processo" id="numero_processo" inputmode="numeric" pattern="[0-9]+" placeholder="xxxxxxx-xx.xxxx.x.xx.xxxx">
+                        </div>
+                        <label for="assunto-processo">Assunto:</label>
+                        <div class="campo">
+                            <input type="text" name="nome" id="nome" placeholder="Assunto do processo">
+                        </div>
+                        <label for="tipo-processo">Tipo:</label>
+                        <div class="campo">
+                            <input type="text" name="tipo" id="tipo" placeholder="Tipo do processo">
+                        </div>
+                        <label for="data">Data do processo:</label>
+                        <div class="campo-data">
+                            <input type="date" name="data" id="data" placeholder="Data">
+                        </div>
                     </div>
-                    <label for="assunto-processo">Assunto:</label>
-                    <div class="campo">
-                        <input type="text" name="assunto-processo" id="iassunto-processo" placeholder="Assunto do processo">
+                    <div id="download">
+                        <label for="file" id="upload">Enviar Arquivo</label>
+                        <input type="file" name="file" id="file">
                     </div>
-                    <label for="tipo-processo">Tipo:</label>
-                    <div class="campo">
-                        <input type="text" name="tipo-processo" id="itipo" placeholder="Tipo do processo">
-                    </div>
-                    <label for="data">Data do processo:</label>
-                    <div class="campo-data">
-                        <input type="date" name="data" id="idata" placeholder="Data">
-                    </div>
-                </div>
-                <div id="download">
-                    <label for="arquivo" id="upload">Enviar Arquivo</label>
-                    <input type="file" name="arquivo" id="iarquivo">
-                </div>
+                    <input type="submit" value="Cadastrar" class="campo">
+                </form>
             </div>
         </section>
     </main>
