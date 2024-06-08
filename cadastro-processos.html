@@ -36,16 +36,22 @@
                         <div class="campo">
                             <input type="text" name="tipo" id="tipo" placeholder="Tipo do processo">
                         </div>
+                        <label for="numero-processo">CPF do participante:</label>
+                        <div class="campo">
+                            <input type="text" name="cpf" id="cpf" inputmode="numeric" pattern="[0-9]+" placeholder="xxx.xxx.xxx-xx">
+                        </div>
                         <label for="data">Data do processo:</label>
                         <div class="campo-data">
                             <input type="date" name="data" id="data" placeholder="Data">
                         </div>
+                        <div id="download">
+                            <label for="file" id="upload">Enviar Arquivo</label>
+                            <input type="file" name="file" id="file">
+                        </div>
+                        <div id="download">
+                            <input type="submit" value="Cadastrar" class="enviar">
+                        </div>
                     </div>
-                    <div id="download">
-                        <label for="file" id="upload">Enviar Arquivo</label>
-                        <input type="file" name="file" id="file">
-                    </div>
-                    <input type="submit" value="Cadastrar" class="campo">
                 </form>
             </div>
         </section>

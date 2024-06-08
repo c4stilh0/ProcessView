@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Verifique se todos os campos estão preenchidos
     if (isset($_FILES['file']) && $_FILES['file']['error'] == UPLOAD_ERR_OK &&
         isset($_POST['nome']) && isset($_POST['numero_processo']) &&
-        isset($_POST['tipo']) && isset($_POST['data'])) {
+        isset($_POST['tipo']) && isset($_POST['data']) && isset($_POST['cpf'])) {
 
         // Pegue as informações do arquivo
         $fileTmpPath = $_FILES['file']['tmp_name'];
@@ -26,14 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $numero_processo = $_POST['numero_processo'];
         $tipo = $_POST['tipo'];
         $data = $_POST['data'];
+        $cpf = $_POST['cpf'];
 
         try {
             // Prepare a query para inserir os dados e o arquivo no banco de dados
-            $stmt = $pdo->prepare("INSERT INTO processos (nome, numero_processo, tipo, data, arquivo_nome, arquivo_tamanho, arquivo_tipo, arquivo_conteudo) VALUES (:nome, :numero_processo, :tipo, :data, :arquivo_nome, :arquivo_tamanho, :arquivo_tipo, :arquivo_conteudo)");
+            $stmt = $pdo->prepare("INSERT INTO processos (nome, numero_processo, tipo, data, cpf, arquivo_nome, arquivo_tamanho, arquivo_tipo, arquivo_conteudo) VALUES (:nome, :numero_processo, :tipo, :data, :cpf, :arquivo_nome, :arquivo_tamanho, :arquivo_tipo, :arquivo_conteudo)");
             $stmt->bindParam(':nome', $nome);
             $stmt->bindParam(':numero_processo', $numero_processo);
             $stmt->bindParam(':tipo', $tipo);
             $stmt->bindParam(':data', $data);
+            $stmt->bindParam(':cpf', $cpf);
             $stmt->bindParam(':arquivo_nome', $fileName);
             $stmt->bindParam(':arquivo_tamanho', $fileSize);
             $stmt->bindParam(':arquivo_tipo', $fileType);

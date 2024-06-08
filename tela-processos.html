@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/processos.css">
-    
+    <script>
+        function loadTeste() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "teste.php", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("teste").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+        window.onload = loadProcessDetails;
+    </script>
 </head>
 <body>
     <main>
@@ -20,11 +32,14 @@
         
         <section id="processos">
             <h1>Bem Vindo ao Process View, seu Gerenciador de<br> Processos Judiciais</h1>
-            <div class="pesquisa">
-                <input type="search" name="search" id="buscar" placeholder="Digite o número do processo">
-                <input type="submit" value="Consultar">
-            </div>
+            <form method="get" action="php/list_file.php">
+                <div class="pesquisa">
+                    <input type="search" name="numero_processo" id="numero_processo" placeholder="Digite o número do processo">
+                    <input type="submit" value="Consultar">
+                </div>
+            </form>
             <div id="parte2">
+                <div id="teste"></div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus hic, sint qui rerum praesentium a deleniti, quis fugit, totam quod ex quisquam libero adipisci dolores earum eum. Impedit, eum enim.</p>
             </div>
         </section>
