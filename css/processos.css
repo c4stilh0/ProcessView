@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 30px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  margin: 25px;
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 30px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #592b02; 
+  border-radius: 10px;
+  height: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #75441a; 
+}
+
 section#processos {
     position: absolute;
     top: 50%;
@@ -52,6 +74,7 @@ input[type="submit"] {
     background-color: white;
 }
 #parte2 {
+    overflow: auto;
     padding: 10px;
     width: auto;
     height: 298px;

@@ -8,7 +8,7 @@ if (isset($_GET['cpf'])) {
     $cpf = $_GET['cpf'];
     try {
         // Prepare a query para selecionar os processos pelo CPF
-        $stmt = $pdo->prepare("SELECT id, numero_processo, tipo, nome FROM processos WHERE cpf = :cpf");
+        $stmt = $pdo->prepare("SELECT id, numero_processo, tipo, nome, cpf FROM processos WHERE cpf = :cpf");
         $stmt->bindValue(':cpf', $cpf);
         $stmt->execute();
         $processos = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -59,6 +59,7 @@ if (isset($_GET['cpf'])) {
                                 <li>
                                     <strong>Assunto:</strong> <?php echo htmlspecialchars($processo['nome']); ?><br>
                                     <strong>Tipo:</strong> <?php echo htmlspecialchars($processo['tipo']); ?><br>
+                                    <strong>CPF do participante:</strong> <?php echo htmlspecialchars($processo['cpf']); ?><br>
                                     <div class="viewFile">
                                         <a href="view_file.php?id=<?php echo $processo['id']; ?>">Visualizar Arquivo</a>
                                     </div>
