@@ -49,13 +49,14 @@ h2 {
 }
 input[type="search"] {
     border-radius: 30px;
-    width: 500px;
+    width: 350px;
     height: 50px;
     border: 0px;
     padding-left: 30px;
     font-size: 15px;
 }
 input[type="submit"] {
+    cursor: pointer;
     margin: 0px;
     margin-right: 5px;
 }
@@ -117,6 +118,20 @@ a {
     width: 300px;
     height: 40px;
 }
+.adicionar{
+    padding-bottom: 2px;
+    padding: 1px;
+    display: block;
+    box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.377);
+    margin-left: 10px;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #592b02;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
 
 @media screen  and  (max-width: 899px) {
     section#processos{
@@ -130,14 +145,14 @@ a {
         max-height: 65vh;
     }
     .pesquisa {
-        width: 430px;
+        width: 400px;
     }
     input[type="search"] {
         padding-left: 20px;
-        width: 230px;
+        width: 210px;
     }
     input[type="submit"] {
-        margin-left: 60px;
+        margin-left: 0px;
         width: 140px;
     }
         
