@@ -20,15 +20,15 @@ if (mysqli_query($conn, $result_usuario)) {
     // Verificar se o usuário foi inserido com sucesso
     if(mysqli_insert_id($conn)){
         $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso</p>";
-        header("Location: ../tela-processos.html");
+        header("Location: tela-processos.php");
     } else {
         $_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
-        header("Location: index.php");
+        header("Location: ../cadastro.html");
     }
 } else {
     // Capturar e exibir o erro de SQL
     $error_message = mysqli_error($conn);
     $_SESSION['msg'] = "<p style='color:red;'>Erro no cadastro: $error_message</p>";
-    header("Location: index.php");
+    header("Location: ../cadastro.html");
 }
 ?>

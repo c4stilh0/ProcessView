@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 30px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  margin: 25px;
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 30px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #592b02; 
+  border-radius: 10px;
+  height: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #75441a; 
+}
+
 section#processos {
     position: absolute;
     top: 50%;
@@ -22,15 +44,19 @@ h1 {
     justify-content: center;
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 input[type="search"] {
     border-radius: 30px;
-    width: 500px;
+    width: 350px;
     height: 50px;
     border: 0px;
     padding-left: 30px;
     font-size: 15px;
 }
 input[type="submit"] {
+    cursor: pointer;
     margin: 0px;
     margin-right: 5px;
 }
@@ -49,12 +75,62 @@ input[type="submit"] {
     background-color: white;
 }
 #parte2 {
+    overflow: auto;
     padding: 10px;
     width: auto;
     height: 298px;
     background-color: #fff;
     margin: 8px;
     border-radius: 30px;
+}
+.containerProcessos {
+    padding: 20px;
+    width: -webkit-fill-available;
+    height: 200px;
+}
+.containerProcessos > h2{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.containerProcessos > ul {
+    padding: 10px;
+    font-size: 16px;
+}
+li {
+    list-style-type: none;
+}
+.containerLi {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(194, 192, 192, 0.473);
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.viewFile {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #592b02;
+    border-radius: 30px;
+    width: 300px;
+    height: 40px;
+}
+.adicionar{
+    padding-bottom: 2px;
+    padding: 1px;
+    display: block;
+    box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.377);
+    margin-left: 10px;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #592b02;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 @media screen  and  (max-width: 899px) {
@@ -69,14 +145,14 @@ input[type="submit"] {
         max-height: 65vh;
     }
     .pesquisa {
-        width: 430px;
+        width: 400px;
     }
     input[type="search"] {
         padding-left: 20px;
-        width: 230px;
+        width: 210px;
     }
     input[type="submit"] {
-        margin-left: 60px;
+        margin-left: 0px;
         width: 140px;
     }
         
