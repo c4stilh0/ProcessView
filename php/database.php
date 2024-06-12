@@ -1,8 +1,8 @@
 <?php
 $host = 'dbloginserver.database.windows.net'; // ou o endereço do seu servidor MySQL
-$db = 'login';
-$user = 'root';
-$pass = '';
+$db   = 'dblogin';
+$user = 'id22299978_pr0cessview2024';
+$pass = 'EWb5$e.E76JzWQf';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
