@@ -1,5 +1,5 @@
 <?php
-$servidor = "127.0.0.1";
+$servidor = "dbloginserver.database.windows.net";
 $usuario = "root";
 $senha = "";
 $dbname = "login";
