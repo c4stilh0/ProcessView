@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost'; // ou o endereço do seu servidor MySQL
+$host = '127.0.0.1'; // ou o endereço do seu servidor MySQL
 $db = 'login';
 $user = 'root';
 $pass = '';
