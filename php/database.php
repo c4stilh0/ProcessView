@@ -1,5 +1,5 @@
 <?php
-$host = '127.0.0.1'; // ou o endereço do seu servidor MySQL
+$host = 'dbloginserver.database.windows.net'; // ou o endereço do seu servidor MySQL
 $db = 'login';
 $user = 'root';
 $pass = '';
