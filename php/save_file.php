@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Execute a query
             $stmt->execute();
             
-            header("location: ../tela-advogado.html");
+            header("location: tela-advogado.php");
             
         } catch (PDOException $e) {
             echo "Erro ao salvar o processo: " . $e->getMessage();

@@ -23,7 +23,7 @@ if (mysqli_query($conn, $result_usuario)) {
         header("Location: list_file.php");
     } else {
         $_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
-        header("Location:   ");
+        header("Location:   ../cadastro.html");
     }
 } else {
     // Capturar e exibir o erro de SQL
