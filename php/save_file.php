@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // Execute a query
             $stmt->execute();
-
-            echo "Processo cadastrado e arquivo enviado com sucesso!";
+            
+            header("location: ../tela-advogado.html");
             
         } catch (PDOException $e) {
             echo "Erro ao salvar o processo: " . $e->getMessage();
