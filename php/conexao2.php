@@ -1,8 +1,8 @@
 <?php
-$host = 'dbloginserver.database.windows.net';
-$db   = 'dblogin';
-$user = 'id22299978_pr0cessview2024';
-$pass = 'EWb5$e.E76JzWQf';
+$host = 'localhost';
+$db = 'login';
+$user = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
